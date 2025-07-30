@@ -1,0 +1,15 @@
+{
+  "name": "DevRetroGames_300725130430_Tutorias_Java",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "DevRetroGames_300725130430_Tutorias_Java_devcontainer",
+  "workspaceFolder": "/Tutorias_Java",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  }
+}

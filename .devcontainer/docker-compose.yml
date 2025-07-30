@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  DevRetroGames_300725130430_Tutorias_Java_devcontainer:
+    image: mcr.microsoft.com/devcontainers/base:noble
+    container_name: DevRetroGames_300725130430_Tutorias_Java_devcontainer
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/Tutorias_Java:cached
+    command: sleep infinity
+    networks:
+      net_interna:
+        aliases:
+          - Tutorias_Java_devcontainer
+
+networks:
+  net_interna:
+    name: Tutorias_Java
+    driver: bridge
+    ipam:
+      driver: default
